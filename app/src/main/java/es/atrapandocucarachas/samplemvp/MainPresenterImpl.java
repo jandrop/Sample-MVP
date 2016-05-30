@@ -2,19 +2,19 @@ package es.atrapandocucarachas.samplemvp;
 
 import java.util.List;
 
-class MainPresenterImpl implements MainPresenter, GetDataInteractor.OnFinishedListener {
+class MainPresenterImpl implements MainPresenter, MainModel.OnFinishedListener {
 
     private MainView mainView;
-    private GetDataInteractor getDataInteractor;
+    private MainModel mainModel;
 
     public MainPresenterImpl(MainView mainView) {
         this.mainView = mainView;
-        getDataInteractor = new GetDataInteractorImpl();
+        mainModel = new MainModelImpl();
     }
 
     @Override
     public void onResume() {
-        getDataInteractor.getData(this);
+        mainModel.getData(this);
     }
 
     @Override
