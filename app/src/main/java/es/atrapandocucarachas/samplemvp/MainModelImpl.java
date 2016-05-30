@@ -6,7 +6,7 @@ package es.atrapandocucarachas.samplemvp;
  * V. 1.00
  */
 
-public class GetDataInteractorImpl implements GetDataInteractor {
+public class MainModelImpl implements MainModel {
 
     @Override
     public void getData(OnFinishedListener listener) {

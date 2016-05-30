@@ -7,7 +7,7 @@ import java.util.List;
  * on 30/5/16.
  * V. 1.00
  */
-public interface GetDataInteractor {
+public interface MainModel {
 
     interface OnFinishedListener {
         void onFinished(List<String> mItems);
